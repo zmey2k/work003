@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>Multi Line Chart</title>
+    <title>Mobile Games Ad Spend</title>
     <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -20,11 +20,13 @@
     <input type="radio" name="platform" value="ios" onclick="addiOS()">iOS
     <input type="radio" name="platform" value="android" onclick="addAndroid()">Android
     <br>
+    <input type="radio" name="network" value="all" onclick="addAllNetworks()">ALL
     <input type="radio" name="network" value="facebook" onclick="addFacebook()">Facebook
     <input type="radio" name="network" value="unity" onclick="addUnity()">Unity
     <input type="radio" name="network" value="ironsource" onclick="addIronSource()">IronSource
     <input type="radio" name="network" value="chartboost" onclick="addChartboost()">Chartboost
     <input type="radio" name="network" value="applovin" onclick="addAppLovin()">Amazon
+    <input type="radio" name="network" value="other" onclick="addother()">other
     <br>
     <button onclick="Execute();">Execute</button>
     <br>
