@@ -12,8 +12,8 @@ function addAr(){
     params.country='ar';
 };
 
-function addDe(){
-    params.country='de';
+function addWW(){
+    params.country='ww';
 };
 
 function addAllPlatforms(){
