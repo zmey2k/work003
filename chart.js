@@ -219,7 +219,6 @@ function myFunction2() {
                 })
             };
         });
-
     //----------------------------SCALES----------------------------//
     const xScale = d3.scaleTime().range([0,width]);
     const yScale = d3.scaleLinear().rangeRound([height, 0]);
@@ -278,5 +277,10 @@ function myFunction2() {
         .attr("transform", "translate(30,0)")
         .attr("d", function(d) { return line(d.values); });
 
+    });
+    var cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - 90);
+    data = data.filter(function(d) {
+        return d.date > cutoffDate;
     })
 };
