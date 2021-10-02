@@ -193,11 +193,11 @@ function myFunction() {
     const timeConv = d3.timeParse("%Y-%m-%d");
     let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv")
     dataset.then(function(d){
-        dataset=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
-        console.log(dataset);
+        dataseto=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
+        console.log(dataset0);
     });
     
-    dataset.then(function(data) {
+    dataset0.then(function(data) {
         let slices = data.columns.slice(1).map(function(id) {
             return {
                 id: id,
@@ -209,11 +209,6 @@ function myFunction() {
                 })
             };   
         });
-        // var cutoffDate = new Date();
-        // cutoffDate.setDate(cutoffDate.timeConv(sd));
-        // data = data.filter(function(d) {
-        //     return d.date > cutoffDate;
-        // });
 
     //----------------------------SCALES----------------------------//
     const xScale = d3.scaleTime().range([0,width]);
