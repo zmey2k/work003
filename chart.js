@@ -214,7 +214,7 @@ function myFunction() {
     const xScale = d3.scaleTime().range([0,width]);
     const yScale = d3.scaleLinear().rangeRound([height, 0]);
     xScale.domain(d3.extent(data, function(d){
-        return timeConv(d.date)}));
+        return timeConv(d.date)+60}));
     yScale.domain([(0), d3.max(slices, function(c) {
         return d3.max(c.values, function(d) {
             return d.measurement + 4; });
@@ -234,7 +234,7 @@ function myFunction() {
 
     //----------------------------LINES-----------------------------//
     const line = d3.line()
-        .x(function(d) { return xScale(d.date); })
+        .x(function(d) { return xScale(d.date)+60; })
         .y(function(d) { return yScale(d.measurement); }); 
 
     //-------------------------2. DRAWING---------------------------//
