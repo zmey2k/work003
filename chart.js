@@ -191,10 +191,11 @@ function myFunction() {
     let sd=document.getElementById("startdate").value;
 
     const timeConv = d3.timeParse("%Y-%m-%d");
-    let dataset0 = d3.csv("./csv_for_site/WWAllplatformsother.csv", function(d){
-        dataset=dataset0.filter(function(d){
+    let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv", function(d){
+        filtered=dataset.filter(function(d){
             return timeConv(d.date)>timeConv('2021-08-26')
         });
+        console.log(filtered);
     });
     
     dataset.then(function(data) {
