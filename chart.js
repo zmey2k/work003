@@ -191,16 +191,11 @@ function myFunction() {
     let sd=document.getElementById("startdate").value;
 
     const timeConv = d3.timeParse("%Y-%m-%d");
-    let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv").then(function(d){
-        filtered=dataset.filter(function(d){return timeConv(d.date)>timeConv('2021-08-26')});
+    let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv")
+    dataset.then(function(d){
+        filtered=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
         console.log(filtered);
     });
-    // let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv", function(d){
-    //     filtered=dataset.filter(function(d){
-    //         return timeConv(d.date)>timeConv('2021-08-26')
-    //     });
-    //     console.log(filtered);
-    // });
     
     dataset.then(function(data) {
         let slices = data.columns.slice(1).map(function(id) {
