@@ -198,11 +198,16 @@ function myFunction() {
                 id: id,
                 values: data.map(function(d){
                     return {
-                        date: timeConv(d.date)>timeConv(sd),
+                        date: timeConv(d.date),
                         measurement: +d[id]
                     };
                 })
-            };
+            };   
+        });
+        var cutoffDate = new Date();
+        cutoffDate.setDate(cutoffDate.timeConv(sd));
+        data = data.filter(function(d) {
+            return d.date > cutoffDate;
         });
 
     //----------------------------SCALES----------------------------//
