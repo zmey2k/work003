@@ -168,9 +168,7 @@ function Execute(){
 
 
 
-
-
 function myFunction() {
     const timeConv = d3.timeParse("%Y-%m-%d");
-    document.getElementById("demo").innerHTML = 'Hello World';
+    document.getElementById("demo").innerHTML = timeConv('2021-05-28');
   }
