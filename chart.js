@@ -192,10 +192,15 @@ function myFunction() {
 
     const timeConv = d3.timeParse("%Y-%m-%d");
     let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv")
-    dataset.then(function(d){
-        let dataset0=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
-        console.log(dataset0);
-    });
+    
+    function dataset(){
+        dataset.then(function(d){
+            let dataset0=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
+            return dataset0
+        });
+    }
+    
+    let dataset=dataset();
     
     dataset.then(function(data) {
         let slices = data.columns.slice(1).map(function(id) {
