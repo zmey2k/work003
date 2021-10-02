@@ -60,6 +60,10 @@ function addother(){
   params.network='other';
 };
 
+function selectButton(){
+    params.date='1';
+  };
+
 function Execute(){
     //------------------------1. PREPARATION------------------------//
     //-----------------------------SVG------------------------------// 
