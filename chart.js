@@ -193,13 +193,13 @@ function myFunction() {
     const timeConv = d3.timeParse("%Y-%m-%d");
     let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv");
     dataset.then(function(data) {
-        data = data.filter(function(d) {
-            return d.date>sd;
+        let data2 = data.filter(function(d) {
+            return timeConv(d.date)>timeConv(sd);
           });
-        var slices = data.columns.slice(1).map(function(id) {
+        let slices = data2.columns.slice(1).map(function(id) {
             return {
                 id: id,
-                values: data.map(function(d){
+                values: data2.map(function(d){
                     return {
                         date: timeConv(d.date),
                         measurement: +d[id]
@@ -216,7 +216,7 @@ function myFunction() {
     //----------------------------SCALES----------------------------//
     const xScale = d3.scaleTime().range([0,width]);
     const yScale = d3.scaleLinear().rangeRound([height, 0]);
-    xScale.domain(d3.extent(data, function(d){
+    xScale.domain(d3.extent(data2, function(d){
         return timeConv(d.date)}));
     yScale.domain([(0), d3.max(slices, function(c) {
         return d3.max(c.values, function(d) {
