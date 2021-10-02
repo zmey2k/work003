@@ -169,17 +169,5 @@ function checkAge(age) {
 }
 
 function myFunction() {
-    dataset.then(function(data) {
-        var slices = data.columns.slice(1).map(function(id) {
-            return {
-                id: id,
-                values: data.map(function(d){
-                    return {
-                        date: timeConv(d.date),
-                        measurement: +d[id]
-                    };
-                })
-            };
-        });
-    });
+    return 'Hello World!'
 }
