@@ -198,8 +198,7 @@ function myFunction() {
                 id: id,
                 values: data.map(function(d){
                     return {
-                        date: data.filter(function (d) {
-                            return timeConv(d.date)>=timeConv(sd)}),
+                        date: timeConv(d.date)+60,
                         measurement: +d[id]
                     };
                 })
