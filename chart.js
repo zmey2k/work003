@@ -199,7 +199,7 @@ function myFunction() {
                 values: data.map(function(d){
                     return {
                         date: data.filter(function (d) {
-                            return timeConv(d.date)>timeConv(sd)},
+                            return timeConv(d.date)>timeConv(sd)}),
                         measurement: +d[id]
                     };
                 })
