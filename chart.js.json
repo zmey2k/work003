@@ -1,0 +1,818 @@
+[
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addUs(){"
+	},
+	{
+		"let params={};": "    params.country='us';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addUk(){"
+	},
+	{
+		"let params={};": "    params.country='uk';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addAr(){"
+	},
+	{
+		"let params={};": "    params.country='ar';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addWW(){"
+	},
+	{
+		"let params={};": "    params.country='ww';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addAllPlatforms(){"
+	},
+	{
+		"let params={};": "    params.platform='Allplatforms';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addiOS(){"
+	},
+	{
+		"let params={};": "    params.platform='iOS';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addAndroid(){"
+	},
+	{
+		"let params={};": "    params.platform='Android';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addAllNetworks(){"
+	},
+	{
+		"let params={};": "  params.network='Allnetworks';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addFacebook(){"
+	},
+	{
+		"let params={};": "  params.network='Facebook';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addAdmob(){"
+	},
+	{
+		"let params={};": "  params.network='AdMob';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addUnity(){"
+	},
+	{
+		"let params={};": "  params.network='Unity';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addIronSource(){"
+	},
+	{
+		"let params={};": "  params.network='IronSource';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addChartboost(){"
+	},
+	{
+		"let params={};": "  params.network='Chartboost';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addAppLovin(){"
+	},
+	{
+		"let params={};": "  params.network='AppLovin';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function addother(){"
+	},
+	{
+		"let params={};": "  params.network='other';"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function Execute(){"
+	},
+	{
+		"let params={};": "    //------------------------1. PREPARATION------------------------//"
+	},
+	{
+		"let params={};": "    //-----------------------------SVG------------------------------// "
+	},
+	{
+		"let params={};": "    const width = 1000;"
+	},
+	{
+		"let params={};": "    const height = 350;"
+	},
+	{
+		"let params={};": "    const margin = 5;"
+	},
+	{
+		"let params={};": "    const padding = 5;"
+	},
+	{
+		"let params={};": "    const adj = 40;"
+	},
+	{
+		"let params={};": "    // we are appending SVG first"
+	},
+	{
+		"let params={};": "    d3.selectAll(\"svg\").remove();"
+	},
+	{
+		"let params={};": "    const svg = d3.select(\"#chart\")"
+	},
+	{
+		"let params={};": "        .append(\"svg\")"
+	},
+	{
+		"let params={};": "        .attr(\"viewBox\""
+	},
+	{
+		"let params={};": "             + adj + \" -\""
+	},
+	{
+		"let params={};": "             + adj + \" \""
+	},
+	{
+		"let params={};": "            + (width + adj *3) + \" \""
+	},
+	{
+		"let params={};": "            + (height + adj*2))"
+	},
+	{
+		"let params={};": "        //.style(\"padding\""
+	},
+	{
+		"let params={};": "        .style(\"margin\""
+	},
+	{
+		"let params={};": "        .classed(\"svg-content\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //-----------------------------DATA-----------------------------//"
+	},
+	{
+		"let params={};": "    const timeConv = d3.timeParse(\"%Y-%m-%d\");"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    let dataset = d3.csv(\"./csv_for_site/\"+params.country+params.platform+params.network+\".csv\");"
+	},
+	{
+		"let params={};": "    dataset.then(function(data) {"
+	},
+	{
+		"let params={};": "        var slices = data.columns.slice(1).map(function(id) {"
+	},
+	{
+		"let params={};": "            return {"
+	},
+	{
+		"let params={};": "                id: id"
+	},
+	{
+		"let params={};": "                values: data.map(function(d){"
+	},
+	{
+		"let params={};": "                    return {"
+	},
+	{
+		"let params={};": "                        date: timeConv(d.date)"
+	},
+	{
+		"let params={};": "                        measurement: +d[id]"
+	},
+	{
+		"let params={};": "                    };"
+	},
+	{
+		"let params={};": "                })"
+	},
+	{
+		"let params={};": "            };"
+	},
+	{
+		"let params={};": "        });"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //----------------------------SCALES----------------------------//"
+	},
+	{
+		"let params={};": "    const xScale = d3.scaleTime().range([0"
+	},
+	{
+		"let params={};": "    const yScale = d3.scaleLinear().rangeRound([height"
+	},
+	{
+		"let params={};": "    xScale.domain(d3.extent(data"
+	},
+	{
+		"let params={};": "        return timeConv(d.date)}));"
+	},
+	{
+		"let params={};": "    yScale.domain([(0)"
+	},
+	{
+		"let params={};": "        return d3.max(c.values"
+	},
+	{
+		"let params={};": "            return d.measurement + 4; });"
+	},
+	{
+		"let params={};": "            })"
+	},
+	{
+		"let params={};": "        ]);"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //-----------------------------AXES-----------------------------//"
+	},
+	{
+		"let params={};": "    const yaxis = d3.axisLeft()"
+	},
+	{
+		"let params={};": "        .ticks((slices[0].values).length/5)"
+	},
+	{
+		"let params={};": "        .scale(yScale)"
+	},
+	{
+		"let params={};": "        .tickFormat(d3.format(\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    const xaxis = d3.axisBottom()"
+	},
+	{
+		"let params={};": "        .ticks(d3.timeDay.every(1))"
+	},
+	{
+		"let params={};": "        .tickFormat(d3.timeFormat(\"%d-%m-%y\"))"
+	},
+	{
+		"let params={};": "        .scale(xScale);"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //----------------------------LINES-----------------------------//"
+	},
+	{
+		"let params={};": "    const line = d3.line()"
+	},
+	{
+		"let params={};": "        .x(function(d) { return xScale(d.date); })"
+	},
+	{
+		"let params={};": "        .y(function(d) { return yScale(d.measurement); }); "
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //-------------------------2. DRAWING---------------------------//"
+	},
+	{
+		"let params={};": "    //-----------------------------AXES-----------------------------//"
+	},
+	{
+		"let params={};": "    svg.append(\"g\")"
+	},
+	{
+		"let params={};": "        .attr(\"class\""
+	},
+	{
+		"let params={};": "        .attr(\"transform\""
+	},
+	{
+		"let params={};": "        .call(xaxis)"
+	},
+	{
+		"let params={};": "        .selectAll(\"text\")"
+	},
+	{
+		"let params={};": "            .attr(\"x\""
+	},
+	{
+		"let params={};": "            .attr(\"dy\""
+	},
+	{
+		"let params={};": "            .attr(\"transform\""
+	},
+	{
+		"let params={};": "            .style(\"text-anchor\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    svg.append(\"g\")"
+	},
+	{
+		"let params={};": "        .attr(\"class\""
+	},
+	{
+		"let params={};": "        .attr(\"transform\""
+	},
+	{
+		"let params={};": "        .call(yaxis)"
+	},
+	{
+		"let params={};": "        .append(\"text\")"
+	},
+	{
+		"let params={};": "        .attr(\"dy\""
+	},
+	{
+		"let params={};": "        .attr(\"y\""
+	},
+	{
+		"let params={};": "        .style(\"text-anchor\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //----------------------------LINES-----------------------------//"
+	},
+	{
+		"let params={};": "    const lines = svg.selectAll(\"lines\")"
+	},
+	{
+		"let params={};": "        .data(slices)"
+	},
+	{
+		"let params={};": "        .enter()"
+	},
+	{
+		"let params={};": "        .append(\"g\")"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "        lines.append(\"path\")"
+	},
+	{
+		"let params={};": "        .attr(\"transform\""
+	},
+	{
+		"let params={};": "        .attr(\"d\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    })"
+	},
+	{
+		"let params={};": "};"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "function myFunction() {"
+	},
+	{
+		"let params={};": "    const width = 1000;"
+	},
+	{
+		"let params={};": "    const height = 350;"
+	},
+	{
+		"let params={};": "    const margin = 5;"
+	},
+	{
+		"let params={};": "    const padding = 5;"
+	},
+	{
+		"let params={};": "    const adj = 40;"
+	},
+	{
+		"let params={};": "    // we are appending SVG first"
+	},
+	{
+		"let params={};": "    d3.selectAll(\"svg\").remove();"
+	},
+	{
+		"let params={};": "    const svg = d3.select(\"#chart\")"
+	},
+	{
+		"let params={};": "        .append(\"svg\")"
+	},
+	{
+		"let params={};": "        .attr(\"viewBox\""
+	},
+	{
+		"let params={};": "             + adj + \" -\""
+	},
+	{
+		"let params={};": "             + adj + \" \""
+	},
+	{
+		"let params={};": "            + (width + adj *3) + \" \""
+	},
+	{
+		"let params={};": "            + (height + adj*2))"
+	},
+	{
+		"let params={};": "        //.style(\"padding\""
+	},
+	{
+		"let params={};": "        .style(\"margin\""
+	},
+	{
+		"let params={};": "        .classed(\"svg-content\""
+	},
+	{
+		"let params={};": "    "
+	},
+	{
+		"let params={};": "    "
+	},
+	{
+		"let params={};": "    let sd=document.getElementById(\"startdate\").value;"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    const timeConv = d3.timeParse(\"%Y-%m-%d\");"
+	},
+	{
+		"let params={};": "    let dataset = d3.csv(\"./csv_for_site/WWAllplatformsother.csv\");"
+	},
+	{
+		"let params={};": "    dataset.then(function(data) {"
+	},
+	{
+		"let params={};": "        var slices = data.columns.slice(1).map(function(id) {"
+	},
+	{
+		"let params={};": "            return {"
+	},
+	{
+		"let params={};": "                id: id"
+	},
+	{
+		"let params={};": "                values: data.map(function(d){"
+	},
+	{
+		"let params={};": "                    return {"
+	},
+	{
+		"let params={};": "                        date: timeConv(d.date)"
+	},
+	{
+		"let params={};": "                        measurement: +d[id]"
+	},
+	{
+		"let params={};": "                    };"
+	},
+	{
+		"let params={};": "                })"
+	},
+	{
+		"let params={};": "            };   "
+	},
+	{
+		"let params={};": "        });"
+	},
+	{
+		"let params={};": "        var cutoffDate = new Date();"
+	},
+	{
+		"let params={};": "        cutoffDate.setDate(cutoffDate.timeConv(sd));"
+	},
+	{
+		"let params={};": "        data = data.filter(function(d) {"
+	},
+	{
+		"let params={};": "            return d.date > cutoffDate;"
+	},
+	{
+		"let params={};": "        });"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //----------------------------SCALES----------------------------//"
+	},
+	{
+		"let params={};": "    const xScale = d3.scaleTime().range([0"
+	},
+	{
+		"let params={};": "    const yScale = d3.scaleLinear().rangeRound([height"
+	},
+	{
+		"let params={};": "    xScale.domain(d3.extent(data"
+	},
+	{
+		"let params={};": "        return timeConv(d.date)}));"
+	},
+	{
+		"let params={};": "    yScale.domain([(0)"
+	},
+	{
+		"let params={};": "        return d3.max(c.values"
+	},
+	{
+		"let params={};": "            return d.measurement + 4; });"
+	},
+	{
+		"let params={};": "            })"
+	},
+	{
+		"let params={};": "        ]);"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //-----------------------------AXES-----------------------------//"
+	},
+	{
+		"let params={};": "    const yaxis = d3.axisLeft()"
+	},
+	{
+		"let params={};": "        .ticks((slices[0].values).length/5)"
+	},
+	{
+		"let params={};": "        .scale(yScale)"
+	},
+	{
+		"let params={};": "        .tickFormat(d3.format(\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    const xaxis = d3.axisBottom()"
+	},
+	{
+		"let params={};": "        .ticks(d3.timeDay.every(1))"
+	},
+	{
+		"let params={};": "        .tickFormat(d3.timeFormat(\"%d-%m-%y\"))"
+	},
+	{
+		"let params={};": "        .scale(xScale);"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //----------------------------LINES-----------------------------//"
+	},
+	{
+		"let params={};": "    const line = d3.line()"
+	},
+	{
+		"let params={};": "        .x(function(d) { return xScale(d.date); })"
+	},
+	{
+		"let params={};": "        .y(function(d) { return yScale(d.measurement); }); "
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //-------------------------2. DRAWING---------------------------//"
+	},
+	{
+		"let params={};": "    //-----------------------------AXES-----------------------------//"
+	},
+	{
+		"let params={};": "    svg.append(\"g\")"
+	},
+	{
+		"let params={};": "        .attr(\"class\""
+	},
+	{
+		"let params={};": "        .attr(\"transform\""
+	},
+	{
+		"let params={};": "        .call(xaxis)"
+	},
+	{
+		"let params={};": "        .selectAll(\"text\")"
+	},
+	{
+		"let params={};": "            .attr(\"x\""
+	},
+	{
+		"let params={};": "            .attr(\"dy\""
+	},
+	{
+		"let params={};": "            .attr(\"transform\""
+	},
+	{
+		"let params={};": "            .style(\"text-anchor\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    svg.append(\"g\")"
+	},
+	{
+		"let params={};": "        .attr(\"class\""
+	},
+	{
+		"let params={};": "        .attr(\"transform\""
+	},
+	{
+		"let params={};": "        .call(yaxis)"
+	},
+	{
+		"let params={};": "        .append(\"text\")"
+	},
+	{
+		"let params={};": "        .attr(\"dy\""
+	},
+	{
+		"let params={};": "        .attr(\"y\""
+	},
+	{
+		"let params={};": "        .style(\"text-anchor\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    //----------------------------LINES-----------------------------//"
+	},
+	{
+		"let params={};": "    const lines = svg.selectAll(\"lines\")"
+	},
+	{
+		"let params={};": "        .data(slices)"
+	},
+	{
+		"let params={};": "        .enter()"
+	},
+	{
+		"let params={};": "        .append(\"g\")"
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "        lines.append(\"path\")"
+	},
+	{
+		"let params={};": "        .attr(\"transform\""
+	},
+	{
+		"let params={};": "        .attr(\"d\""
+	},
+	{
+		"let params={};": ""
+	},
+	{
+		"let params={};": "    })"
+	},
+	{
+		"let params={};": "  }"
+	},
+	{
+		"let params={};": ""
+	}
+]
