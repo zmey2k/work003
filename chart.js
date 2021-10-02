@@ -193,7 +193,7 @@ function myFunction() {
     const timeConv = d3.timeParse("%Y-%m-%d");
     let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv")
     dataset.then(function(d){
-        dataseto=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
+        dataset0=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
         console.log(dataset0);
     });
     
