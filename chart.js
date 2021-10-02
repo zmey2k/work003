@@ -204,11 +204,11 @@ function myFunction() {
                 })
             };   
         });
-        var cutoffDate = new Date();
-        cutoffDate.setDate(cutoffDate.timeConv(sd));
-        data = data.filter(function(d) {
-            return d.date > cutoffDate;
-        });
+        // var cutoffDate = new Date();
+        // cutoffDate.setDate(cutoffDate.timeConv(sd));
+        // data = data.filter(function(d) {
+        //     return d.date > cutoffDate;
+        // });
 
     //----------------------------SCALES----------------------------//
     const xScale = d3.scaleTime().range([0,width]);
