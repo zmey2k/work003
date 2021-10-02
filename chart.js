@@ -60,8 +60,6 @@ function addother(){
   params.network='other';
 };
 
-const from=document.getElementById('startperiod')
-
 
 function Execute(){
     //------------------------1. PREPARATION------------------------//
@@ -163,5 +161,5 @@ function Execute(){
 };
 
 function myFunction() { // Declare a function
-    document.getElementById("demo").innerHTML = "Hello World!";
+    document.getElementById("demo").innerHTML = dataset;
   }
