@@ -169,7 +169,7 @@ function Execute(){
 
 
 function myFunction() {
-    const dd=document.getElementById("startdate").value;
+    let dd='2021-04-26';
     const timeConv = d3.timeParse("%Y-%m-%d");
     document.getElementById("demo").innerHTML = timeConv(dd);
   }
