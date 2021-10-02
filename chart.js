@@ -219,6 +219,11 @@ function myFunction2() {
                 })
             };
         });
+        var cutoffDate = new Date();
+        cutoffDate.setDate(cutoffDate.getDate() - 20);
+        data = data.filter(function(d) {
+            return d.date > cutoffDate;
+        });
     //----------------------------SCALES----------------------------//
     const xScale = d3.scaleTime().range([0,width]);
     const yScale = d3.scaleLinear().rangeRound([height, 0]);
@@ -278,9 +283,4 @@ function myFunction2() {
         .attr("d", function(d) { return line(d.values); });
 
     });
-    var cutoffDate = new Date();
-    cutoffDate.setDate(cutoffDate.getDate() - 20);
-    data = data.filter(function(d) {
-        return d.date > cutoffDate;
-    })
 };
