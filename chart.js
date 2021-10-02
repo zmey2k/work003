@@ -169,7 +169,7 @@ function Execute(){
 
 
 function myFunction() {
-    dd=document.getElementById("startdate").value;
+    const dd=document.getElementById("startdate").value;
     const timeConv = d3.timeParse("%Y-%m-%d");
     document.getElementById("demo").innerHTML = timeConv(dd);
   }
