@@ -198,11 +198,11 @@ function myFunction() {
     });
     
     dataset.then(function(data) {
-        let data = data.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
-        let slices = data.columns.slice(1).map(function(id) {
+        let data0 = data.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
+        let slices = data0.columns.slice(1).map(function(id) {
             return {
                 id: id,
-                values: data.map(function(d){
+                values: data0.map(function(d){
                     return {
                         date: timeConv(d.date),
                         measurement: +d[id]
