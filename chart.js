@@ -279,7 +279,7 @@ function myFunction2() {
 
     });
     var cutoffDate = new Date();
-    cutoffDate.setDate(cutoffDate.getDate() - 90);
+    cutoffDate.setDate(cutoffDate.getDate() - 20);
     data = data.filter(function(d) {
         return d.date > cutoffDate;
     })
