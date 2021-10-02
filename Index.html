@@ -30,7 +30,7 @@
     <br>
     'from'
     <div class='selectButton'>
-        <select>
+        <select id='startperiod'>
             <option>'2021-04-26'</option>
             <option>'2021-04-27'</option>
             <option>'2021-04-28'</option>
@@ -38,7 +38,7 @@
     </div>
     'to'
     <div class='selectButton'>
-        <select>
+        <select id='endperiod'>
             <option>'2021-04-26'</option>
             <option>'2021-04-27'</option>
             <option>'2021-04-28'</option>
@@ -50,6 +50,12 @@
     <br>
     <div id="chart" class="svg-container"></div>
     <script src="chart.js"></script>
+    <br>
+    <br>
+    <p><input type="number" id="ageToCheck" value="18"></p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
 
 </body>
 </html>

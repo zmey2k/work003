@@ -60,9 +60,8 @@ function addother(){
   params.network='other';
 };
 
-function selectButton(){
-    params.date='1';
-  };
+const from=document.getElementById('startperiod')
+
 
 function Execute(){
     //------------------------1. PREPARATION------------------------//
@@ -160,17 +159,15 @@ function Execute(){
         .attr("transform", "translate(30,0)")
         .attr("d", function(d) { return line(d.values); });
 
-        // lines.append("text")
-        // .attr("class","serie_label")
-        // .datum(function(d) {
-        //     return {
-        //         id: d.id,
-        //         value: d.values[d.values.length - 1]}; })
-        // .attr("transform", function(d) {
-        //         return "translate(" + (xScale(d.value.date) + 10)  
-        //         + "," + (yScale(d.value.measurement) + 5 ) + ")"; })
-        // .attr("x", 5);
-        
-
     })
 };
+
+const ages = [4, 12, 16, 20];
+
+function checkAge(age) {
+  return age > document.getElementById("ageToCheck").value;
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.find(checkAge);
+}
