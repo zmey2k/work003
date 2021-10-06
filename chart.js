@@ -194,7 +194,7 @@ function myFunction() {
     let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv")
     dataset
         .then(function(d){
-            let data=d.filter(function(i){
+            let data0=d.filter(function(i){
                 return timeConv(i.date)>timeConv('2021-08-26');
             });
             return data0;
