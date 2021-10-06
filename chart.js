@@ -167,7 +167,7 @@ function myFunction() {
     const height = 350;
     const margin = 5;
     const padding = 5;
-    const adj = 40;
+    const adj = 30;
     // we are appending SVG first
     d3.selectAll("svg").remove();
     const svg = d3.select("#chart").append("svg")
@@ -253,7 +253,7 @@ function myFunction() {
                 .call(yaxis)
                 .append("text")
                 .attr("dy", ".75em")
-                .attr("y", 6)
+                .attr("y", 8)
                 .style("text-anchor", "end");
 
             //----------------------------LINES-----------------------------//
