@@ -201,7 +201,7 @@ function myFunction() {
                     values: data.map(function(d){
                         return {
                             date: timeConv(d.date),
-                            measurement: d.market_volume
+                            measurement: +d.market_volume
                         };
                     }),
                 };   
