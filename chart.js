@@ -66,7 +66,7 @@ function Execute(){
     //------------------------1. PREPARATION------------------------//
     //-----------------------------SVG------------------------------// 
     const width = 1000;
-    const height = 350;
+    const height = 450;
     const margin = 5;
     const padding = 5;
     const adj = 40;
