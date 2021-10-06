@@ -226,7 +226,7 @@ function myFunction() {
                 .tickFormat(d3.format(",.0f")); //making axisticks format
 
             const xaxis = d3.axisBottom()
-                .ticks(d3.timeDay.every(2))
+                .ticks(d3.timeDay.every(1))
                 .tickFormat(d3.timeFormat("%d-%m-%Y"))
                 .scale(xScale);
 
