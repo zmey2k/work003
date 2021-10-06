@@ -192,7 +192,7 @@ function myFunction() {
     let ed=document.getElementById("enddate").value;
 
     const timeConv = d3.timeParse("%Y-%m-%d");
-    let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv");
+    let dataset = d3.csv("./csv_for_site/"+params.country+params.platform+params.network+".csv");
     dataset
         .then(function(d){
             let data0=d.filter(function(i){
