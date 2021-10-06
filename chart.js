@@ -209,7 +209,7 @@ function myFunction() {
 
             //----------------------------SCALES----------------------------//
             const xScale = d3.scaleTime().range([0,width]);
-            const yScale = d3.scaleLinear().rangeRound([height, 10000]);
+            const yScale = d3.scaleLinear().rangeRound([height, 10000000]);
             xScale.domain(d3.extent(data, function(d){
                 return timeConv(d.date)}));
             yScale.domain([(0), d3.max(slices, function(c) {
