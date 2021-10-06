@@ -200,6 +200,7 @@ function myFunction() {
             return data0;
         })
         .then(function(data) {
+            console.log(data);
             let slices = data.columns.slice(1).map(function(id) {
                 return {
                     id: id,
