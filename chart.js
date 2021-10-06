@@ -214,7 +214,7 @@ function myFunction() {
                 return timeConv(d.date)}));
             yScale.domain([(0), d3.max(slices, function(c) {
                 return d3.max(c.values, function(d) {
-                    return d.market_volume; });
+                    return d.measurement; });
                     })
                 ]);
 
