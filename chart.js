@@ -221,13 +221,13 @@ function myFunction() {
 
             //-----------------------------AXES-----------------------------//
             const yaxis = d3.axisLeft()
-                .ticks((slices[0].values).length)
+                .ticks((slices[0].values).length/5)
                 .scale(yScale)
                 .tickFormat(d3.format(",.0f")); //making axisticks format
 
             const xaxis = d3.axisBottom()
-                .ticks(d3.timeDay.every(1))
-                .tickFormat(d3.timeFormat("%d-%m-%y"))
+                .ticks(d3.timeDay.every(7))
+                .tickFormat(d3.timeFormat("%dd-%mm-%yyyy"))
                 .scale(xScale);
 
             //----------------------------LINES-----------------------------//
