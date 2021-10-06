@@ -189,13 +189,14 @@ function myFunction() {
     
     
     let sd=document.getElementById("startdate").value;
+    let ed=document.getElementById("enddate").value;
 
     const timeConv = d3.timeParse("%Y-%m-%d");
     let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv");
     dataset
         .then(function(d){
             let data0=d.filter(function(i){
-                return timeConv(i.date)>timeConv(sd);
+                return timeConv(i.date)>=timeConv(sd) && timeConv(i.date)<=timeConv(ed);
             });
             return data0;
         })
