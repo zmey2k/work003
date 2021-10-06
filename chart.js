@@ -206,7 +206,6 @@ function myFunction() {
                     }),
                 };   
             });
-            console.log(slices);
 
             //----------------------------SCALES----------------------------//
             const xScale = d3.scaleTime().range([0,width]);
@@ -215,7 +214,7 @@ function myFunction() {
                 return timeConv(d.date)}));
             yScale.domain([(0), d3.max(slices, function(c) {
                 return d3.max(c.values, function(d) {
-                    return d.measurement; });
+                    return d.market_volume; });
                     })
                 ]);
 
@@ -239,7 +238,7 @@ function myFunction() {
             //-----------------------------AXES-----------------------------//
             svg.append("g")
                 .attr("class", "axis")
-                .attr("transform", "translate(30,0)")
+                .attr("transform", "translate(30," + height + ")")
                 .call(xaxis)
                 .selectAll("text")
                     .attr("x", -5)
