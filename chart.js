@@ -197,7 +197,7 @@ function myFunction() {
             let data=d.filter(function(i){
                 return timeConv(i.date)>timeConv('2021-08-26');
             });
-            return data;
+            return data0;
         })
         .then(function(data) {
             let slices = data.columns.slice(1).map(function(id) {
