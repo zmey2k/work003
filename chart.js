@@ -200,7 +200,6 @@ function myFunction() {
             return data0;
         })
         .then(function(data) {
-            console.log(data);
             let slices = data.slice(1).map(function(id) {
                 return {
                     id: id,
@@ -216,7 +215,7 @@ function myFunction() {
             //----------------------------SCALES----------------------------//
             const xScale = d3.scaleTime().range([0,width]);
             const yScale = d3.scaleLinear().rangeRound([height, 0]);
-            xScale.domain(d3.extent(data, function(d){
+            xScale.domain(d3.extent(data0, function(d){
                 return timeConv(d.date)}));
             yScale.domain([(0), d3.max(slices, function(c) {
                 return d3.max(c.values, function(d) {
