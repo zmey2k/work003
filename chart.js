@@ -170,14 +170,14 @@ function myFunction() {
     const adj = 40;
     // we are appending SVG first
     d3.selectAll("svg").remove();
-    const svg = d3.select("#chart")
-        .append("svg")
+    const svg = d3.select("#chart").append("svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", "-"
              + adj + " -"
              + adj + " "
             + (width + adj *3) + " "
-            + (height + adj*2))
-        //.style("padding", padding)
+            + (height + adj*3))
+        .style("padding", padding)
         .style("margin", margin)
         .classed("svg-content", true);
     
