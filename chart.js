@@ -195,7 +195,7 @@ function myFunction() {
     dataset
         .then(function(d){
             let data0=d.filter(function(i){
-                return timeConv(i.date)>timeConv('2021-08-26');
+                return timeConv(i.date)>timeConv(sd);
             });
             return data0;
         })
