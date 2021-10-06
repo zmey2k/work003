@@ -215,7 +215,7 @@ function myFunction() {
                 return timeConv(d.date)}));
             yScale.domain([(0), d3.max(slices, function(c) {
                 return d3.max(c.values, function(d) {
-                    return d.measurement + 4; });
+                    return d.measurement; });
                     })
                 ]);
 
@@ -226,7 +226,7 @@ function myFunction() {
                 .tickFormat(d3.format(",.0f")); //making axisticks format
 
             const xaxis = d3.axisBottom()
-                .ticks(d3.timeDay.every(7))
+                .ticks(d3.timeDay.every(2))
                 .tickFormat(d3.timeFormat("%d-%m-%Y"))
                 .scale(xScale);
 
