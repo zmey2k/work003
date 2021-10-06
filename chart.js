@@ -164,7 +164,7 @@ function addother(){
 
 function myFunction() {
     const width = 1000;
-    const height = 350;
+    const height = 450;
     const margin = 5;
     const padding = 5;
     const adj = 40;
@@ -221,7 +221,7 @@ function myFunction() {
 
             //-----------------------------AXES-----------------------------//
             const yaxis = d3.axisLeft()
-                .ticks((slices[0].values).length/5)
+                .ticks((slices[0].values).length)
                 .scale(yScale)
                 .tickFormat(d3.format(",.0f")); //making axisticks format
 
