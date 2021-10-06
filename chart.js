@@ -239,7 +239,7 @@ function myFunction() {
             //-----------------------------AXES-----------------------------//
             svg.append("g")
                 .attr("class", "axis")
-                .attr("transform", "translate(30," + height + ")")
+                .attr("transform", "translate(30,0)")
                 .call(xaxis)
                 .selectAll("text")
                     .attr("x", -5)
