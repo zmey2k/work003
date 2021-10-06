@@ -211,11 +211,12 @@ function myFunction() {
                     }),
                 };   
             });
+            console.log(slices);
 
             //----------------------------SCALES----------------------------//
             const xScale = d3.scaleTime().range([0,width]);
             const yScale = d3.scaleLinear().rangeRound([height, 0]);
-            xScale.domain(d3.extent(data0, function(d){
+            xScale.domain(d3.extent(data, function(d){
                 return timeConv(d.date)}));
             yScale.domain([(0), d3.max(slices, function(c) {
                 return d3.max(c.values, function(d) {
