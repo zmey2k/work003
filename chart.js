@@ -227,7 +227,7 @@ function myFunction() {
 
             const xaxis = d3.axisBottom()
                 .ticks(d3.timeDay.every(7))
-                .tickFormat(d3.timeFormat("%dd-%mm-%yyyy"))
+                .tickFormat(d3.timeFormat("%d-%m-%Y"))
                 .scale(xScale);
 
             //----------------------------LINES-----------------------------//
