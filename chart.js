@@ -208,69 +208,68 @@ function myFunction() {
                             date: timeConv(d.date),
                             measurement: +d[id]
                         };
-                    })
+                    }),
                 };   
             });
 
-    //----------------------------SCALES----------------------------//
-    const xScale = d3.scaleTime().range([0,width]);
-    const yScale = d3.scaleLinear().rangeRound([height, 0]);
-    xScale.domain(d3.extent(data, function(d){
-        return timeConv(d.date)}));
-    yScale.domain([(0), d3.max(slices, function(c) {
-        return d3.max(c.values, function(d) {
-            return d.measurement + 4; });
+            //----------------------------SCALES----------------------------//
+            const xScale = d3.scaleTime().range([0,width]);
+            const yScale = d3.scaleLinear().rangeRound([height, 0]);
+            xScale.domain(d3.extent(data, function(d){
+                return timeConv(d.date)}));
+            yScale.domain([(0), d3.max(slices, function(c) {
+                return d3.max(c.values, function(d) {
+                    return d.measurement + 4; });
+                    })
+                ]);
+
+            //-----------------------------AXES-----------------------------//
+            const yaxis = d3.axisLeft()
+                .ticks((slices[0].values).length/5)
+                .scale(yScale)
+                .tickFormat(d3.format(",.0f")); //making axisticks format
+
+            const xaxis = d3.axisBottom()
+                .ticks(d3.timeDay.every(1))
+                .tickFormat(d3.timeFormat("%d-%m-%y"))
+                .scale(xScale);
+
+            //----------------------------LINES-----------------------------//
+            const line = d3.line()
+                .x(function(d) { return xScale(d.date); })
+                .y(function(d) { return yScale(d.measurement); }); 
+
+            //-------------------------2. DRAWING---------------------------//
+            //-----------------------------AXES-----------------------------//
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(30," + height + ")")
+                .call(xaxis)
+                .selectAll("text")
+                    .attr("x", -5)
+                    .attr("dy",".35em")
+                    .attr("transform","rotate(-90)")
+                    .style("text-anchor","end");
+
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(30,0)")
+                .call(yaxis)
+                .append("text")
+                .attr("dy", ".75em")
+                .attr("y", 6)
+                .style("text-anchor", "end");
+
+            //----------------------------LINES-----------------------------//
+            const lines = svg.selectAll("lines")
+                .data(slices)
+                .enter()
+                .append("g")
+
+                lines.append("path")
+                .attr("transform", "translate(30,0)")
+                .attr("d", function(d) { return line(d.values); });
             })
-        ]);
-
-    //-----------------------------AXES-----------------------------//
-    const yaxis = d3.axisLeft()
-        .ticks((slices[0].values).length/5)
-        .scale(yScale)
-        .tickFormat(d3.format(",.0f")); //making axisticks format
-
-    const xaxis = d3.axisBottom()
-        .ticks(d3.timeDay.every(1))
-        .tickFormat(d3.timeFormat("%d-%m-%y"))
-        .scale(xScale);
-
-    //----------------------------LINES-----------------------------//
-    const line = d3.line()
-        .x(function(d) { return xScale(d.date); })
-        .y(function(d) { return yScale(d.measurement); }); 
-
-    //-------------------------2. DRAWING---------------------------//
-    //-----------------------------AXES-----------------------------//
-    svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(30," + height + ")")
-        .call(xaxis)
-        .selectAll("text")
-            .attr("x", -5)
-            .attr("dy",".35em")
-            .attr("transform","rotate(-90)")
-            .style("text-anchor","end");
-
-    svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(30,0)")
-        .call(yaxis)
-        .append("text")
-        .attr("dy", ".75em")
-        .attr("y", 6)
-        .style("text-anchor", "end");
-
-    //----------------------------LINES-----------------------------//
-    const lines = svg.selectAll("lines")
-        .data(slices)
-        .enter()
-        .append("g")
-
-        lines.append("path")
-        .attr("transform", "translate(30,0)")
-        .attr("d", function(d) { return line(d.values); });
-
-    })
-  }
+        }
 
 
