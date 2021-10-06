@@ -201,7 +201,7 @@ function myFunction() {
         })
         .then(function(data) {
             console.log(data);
-            let slices = data.columns.slice(1).map(function(id) {
+            let slices = data.slice(1).map(function(id) {
                 return {
                     id: id,
                     values: data.map(function(d){
