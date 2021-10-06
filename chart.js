@@ -192,21 +192,25 @@ function myFunction() {
 
     const timeConv = d3.timeParse("%Y-%m-%d");
     let dataset = d3.csv("./csv_for_site/WWAllplatformsother.csv")
-    dataset.then(function(d){
-        let data=d.filter(function(i){return timeConv(i.date)>timeConv('2021-08-26')});
-        return data;
-    }).then(function(data) {
-        let slices = data.columns.slice(1).map(function(id) {
-            return {
-                id: id,
-                values: data.map(function(d){
-                    return {
-                        date: timeConv(d.date),
-                        measurement: +d[id]
-                    };
-                })
-            };   
-        });
+    dataset
+        .then(function(d){
+            let dat0=d.filter(function(i){
+                return timeConv(i.date)>timeConv('2021-08-26');
+            });
+            return data;
+        })
+        .then(function(data) {
+            let slices = data.columns.slice(1).map(function(id) {
+                return {
+                    id: id,
+                    values: data.map(function(d){
+                        return {
+                            date: timeConv(d.date),
+                            measurement: +d[id]
+                        };
+                    })
+                };   
+            });
 
     //----------------------------SCALES----------------------------//
     const xScale = d3.scaleTime().range([0,width]);
