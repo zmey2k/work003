@@ -254,7 +254,7 @@ function myFunction() {
                 .attr("dy", ".75em")
                 .attr("y", 8)
                 .style("text-anchor", "end")
-                .text("ads of games in games, US$")
+                .text("US$ spend on mobile games ads")
                 .attr('transform', 'rotate(-90)');
 
             //----------------------------LINES-----------------------------//
