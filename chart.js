@@ -177,7 +177,7 @@ function myFunction() {
              + adj + " "
             + (width + adj *3) + " "
             + (height + adj*3))
-        .style("padding", padding)
+        //.style("padding", padding)
         .style("margin", margin)
         .classed("svg-content", true);
     
