@@ -167,7 +167,7 @@ function myFunction() {
     const height = 390;
     const margin = 5;
     const padding = 5;
-    const adj = 20;
+    const adj = 45;
     // we are appending SVG first
     d3.selectAll("svg").remove();
     const svg = d3.select("#chart").append("svg")
