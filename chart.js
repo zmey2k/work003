@@ -253,7 +253,8 @@ function myFunction() {
                 .append("text")
                 .attr("dy", ".75em")
                 .attr("y", 8)
-                .style("text-anchor", "end");
+                .style("text-anchor", "end")
+                .text("ads of games in games, US$");
 
             //----------------------------LINES-----------------------------//
             const lines = svg.selectAll("lines")
