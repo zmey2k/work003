@@ -163,7 +163,7 @@ function addother(){
 
 
 function myFunction() {
-    const width = 1000;
+    const width = 800;
     const height = 350;
     const margin = 5;
     const padding = 5;
