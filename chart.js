@@ -164,7 +164,7 @@ function addother(){
 
 function myFunction() {
     const width = 1000;
-    const height = 3500;
+    const height = 350;
     const margin = 5;
     const padding = 5;
     const adj = 41;
