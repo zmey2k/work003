@@ -163,11 +163,11 @@ function addother(){
 
 
 function myFunction() {
-    const width = 1150;
-    const height = 390;
+    const width = 1000;
+    const height = 3500;
     const margin = 5;
     const padding = 5;
-    const adj = 45;
+    const adj = 41;
     // we are appending SVG first
     d3.selectAll("svg").remove();
     const svg = d3.select("#chart").append("svg")
