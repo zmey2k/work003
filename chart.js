@@ -254,7 +254,8 @@ function myFunction() {
                 .attr("dy", ".75em")
                 .attr("y", 8)
                 .style("text-anchor", "end")
-                .text("ads of games in games, US$");
+                .text("ads of games in games, US$")
+                .attr('transform', 'rotate(-90)');
 
             //----------------------------LINES-----------------------------//
             const lines = svg.selectAll("lines")
