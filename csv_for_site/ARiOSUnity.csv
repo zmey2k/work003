@@ -87,7 +87,7 @@ date,country,network,market_volume
 2021-07-24,AR,Unity,8809.0
 2021-07-25,AR,Unity,20181.0
 2021-07-26,AR,Unity,11102.0
-2021-07-27,AR,Unity,10845.0
+2021-07-27,AR,Unity,14618.0
 2021-07-28,AR,Unity,18621.0
 2021-07-29,AR,Unity,9280.0
 2021-07-30,AR,Unity,4364.0
@@ -118,7 +118,6 @@ date,country,network,market_volume
 2021-08-29,AR,Unity,4439.0
 2021-08-30,AR,Unity,6260.0
 2021-08-31,AR,Unity,3350.0
-2021-09-01,AR,Unity,9554.0
 2021-09-03,AR,Unity,7851.0
 2021-09-04,AR,Unity,5549.0
 2021-09-06,AR,Unity,3508.0
@@ -130,3 +129,13 @@ date,country,network,market_volume
 2021-09-14,AR,Unity,7283.0
 2021-09-15,AR,Unity,3237.0
 2021-09-18,AR,Unity,5771.0
+2021-09-22,AR,Unity,5189.0
+2021-09-23,AR,Unity,2824.0
+2021-09-24,AR,Unity,2247.0
+2021-09-26,AR,Unity,4243.0
+2021-09-27,AR,Unity,5448.0
+2021-09-28,AR,Unity,5887.0
+2021-09-29,AR,Unity,10717.0
+2021-09-30,AR,Unity,1867.0
+2021-10-02,AR,Unity,2556.0
+2021-10-03,AR,Unity,7388.0
