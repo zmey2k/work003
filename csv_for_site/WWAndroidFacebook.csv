@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,WW,Facebook,17032033.0
 2021-04-27,WW,Facebook,18230041.0
 2021-04-28,WW,Facebook,16860591.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,WW,Facebook,7279588.0
 2021-11-27,WW,Facebook,8790220.0
 2021-11-28,WW,Facebook,8800218.0
+2021-11-29,WW,Facebook,7421983.0
+2021-11-30,WW,Facebook,7443862.0
+2021-12-01,WW,Facebook,6676975.0
+2021-12-02,WW,Facebook,7205352.0
+2021-12-03,WW,Facebook,7960177.0
+2021-12-04,WW,Facebook,8923913.0
+2021-12-05,WW,Facebook,9500904.0
+2021-12-06,WW,Facebook,5989410.0
+2021-12-07,WW,Facebook,6276852.0
+2021-12-08,WW,Facebook,7660888.0
+2021-12-09,WW,Facebook,7118110.0
+2021-12-10,WW,Facebook,8012412.0
+2021-12-11,WW,Facebook,9400943.0
+2021-12-12,WW,Facebook,8461125.0

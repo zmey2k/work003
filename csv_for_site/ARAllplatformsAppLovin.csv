@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,AR,AppLovin,169738.0
 2021-04-27,AR,AppLovin,133441.0
 2021-04-28,AR,AppLovin,130175.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,AR,AppLovin,122556.0
 2021-11-27,AR,AppLovin,69856.0
 2021-11-28,AR,AppLovin,89391.0
+2021-11-29,AR,AppLovin,532094.0
+2021-11-30,AR,AppLovin,467922.0
+2021-12-01,AR,AppLovin,445547.0
+2021-12-02,AR,AppLovin,353010.0
+2021-12-03,AR,AppLovin,504404.0
+2021-12-04,AR,AppLovin,1258409.0
+2021-12-05,AR,AppLovin,465957.0
+2021-12-06,AR,AppLovin,459723.0
+2021-12-07,AR,AppLovin,776913.0
+2021-12-08,AR,AppLovin,578005.0
+2021-12-09,AR,AppLovin,492088.0
+2021-12-10,AR,AppLovin,676528.0
+2021-12-11,AR,AppLovin,765891.0
+2021-12-12,AR,AppLovin,1312657.0

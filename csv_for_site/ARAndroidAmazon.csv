@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,AR,Amazon,207489.0
 2021-04-27,AR,Amazon,159202.0
 2021-04-28,AR,Amazon,143816.0
@@ -192,3 +192,17 @@ date,country,network,market_volume
 2021-11-26,AR,Amazon,34414.0
 2021-11-27,AR,Amazon,49473.0
 2021-11-28,AR,Amazon,39634.0
+2021-11-29,AR,Amazon,813106.0
+2021-11-30,AR,Amazon,627808.0
+2021-12-01,AR,Amazon,365166.0
+2021-12-02,AR,Amazon,707605.0
+2021-12-03,AR,Amazon,551499.0
+2021-12-04,AR,Amazon,811327.0
+2021-12-05,AR,Amazon,1420005.0
+2021-12-06,AR,Amazon,693450.0
+2021-12-07,AR,Amazon,652112.0
+2021-12-08,AR,Amazon,595148.0
+2021-12-09,AR,Amazon,835724.0
+2021-12-10,AR,Amazon,724310.0
+2021-12-11,AR,Amazon,959486.0
+2021-12-12,AR,Amazon,938880.0

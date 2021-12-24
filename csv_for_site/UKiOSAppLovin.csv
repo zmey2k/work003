@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,UK,AppLovin,98283.0
 2021-04-27,UK,AppLovin,216762.0
 2021-04-28,UK,AppLovin,96387.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,UK,AppLovin,144108.0
 2021-11-27,UK,AppLovin,289874.0
 2021-11-28,UK,AppLovin,223796.0
+2021-11-29,UK,AppLovin,179837.0
+2021-11-30,UK,AppLovin,157444.0
+2021-12-01,UK,AppLovin,242879.0
+2021-12-02,UK,AppLovin,274777.0
+2021-12-03,UK,AppLovin,225193.0
+2021-12-04,UK,AppLovin,324367.0
+2021-12-05,UK,AppLovin,412316.0
+2021-12-06,UK,AppLovin,224107.0
+2021-12-07,UK,AppLovin,236102.0
+2021-12-08,UK,AppLovin,254751.0
+2021-12-09,UK,AppLovin,235858.0
+2021-12-10,UK,AppLovin,332944.0
+2021-12-11,UK,AppLovin,439895.0
+2021-12-12,UK,AppLovin,394854.0

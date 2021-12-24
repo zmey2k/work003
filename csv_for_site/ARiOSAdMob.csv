@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-28,AR,AdMob,43176.0
 2021-04-29,AR,AdMob,29006.0
 2021-04-30,AR,AdMob,36283.0

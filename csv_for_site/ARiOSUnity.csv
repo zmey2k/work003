@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,AR,Unity,11754.0
 2021-04-27,AR,Unity,35267.0
 2021-04-28,AR,Unity,6537.0
@@ -170,3 +170,11 @@ date,country,network,market_volume
 2021-11-19,AR,Unity,777.0
 2021-11-21,AR,Unity,997.0
 2021-11-24,AR,Unity,1333.0
+2021-11-29,AR,Unity,19366.0
+2021-11-30,AR,Unity,4340.0
+2021-12-02,AR,Unity,1857.0
+2021-12-05,AR,Unity,5050.0
+2021-12-07,AR,Unity,7114.0
+2021-12-08,AR,Unity,5592.0
+2021-12-10,AR,Unity,8177.0
+2021-12-11,AR,Unity,8584.0

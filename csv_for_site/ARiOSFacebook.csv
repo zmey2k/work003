@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,AR,Facebook,4672.0
 2021-04-27,AR,Facebook,3056.0
 2021-04-28,AR,Facebook,2892.0
@@ -172,3 +172,4 @@ date,country,network,market_volume
 2021-11-16,AR,Facebook,3611.0
 2021-11-20,AR,Facebook,3317.0
 2021-11-26,AR,Facebook,174.0
+2021-12-12,AR,Facebook,9443.0

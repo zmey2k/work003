@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,US,other,1804699.0
 2021-04-27,US,other,2175107.0
 2021-04-28,US,other,2286952.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,US,other,3974073.0
 2021-11-27,US,other,3879047.0
 2021-11-28,US,other,4248723.0
+2021-11-29,US,other,2225050.0
+2021-11-30,US,other,2733621.0
+2021-12-01,US,other,2232875.0
+2021-12-02,US,other,2188532.0
+2021-12-03,US,other,2864510.0
+2021-12-04,US,other,3444876.0
+2021-12-05,US,other,4272034.0
+2021-12-06,US,other,2414097.0
+2021-12-07,US,other,2385976.0
+2021-12-08,US,other,2946696.0
+2021-12-09,US,other,2818864.0
+2021-12-10,US,other,3322440.0
+2021-12-11,US,other,4883734.0
+2021-12-12,US,other,5524440.0

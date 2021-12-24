@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,UK,other,78337.0
 2021-04-27,UK,other,81097.0
 2021-04-28,UK,other,98652.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,UK,other,66902.0
 2021-11-27,UK,other,145741.0
 2021-11-28,UK,other,145626.0
+2021-11-29,UK,other,232017.0
+2021-11-30,UK,other,214309.0
+2021-12-01,UK,other,248515.0
+2021-12-02,UK,other,284820.0
+2021-12-03,UK,other,257509.0
+2021-12-04,UK,other,409351.0
+2021-12-05,UK,other,501642.0
+2021-12-06,UK,other,178733.0
+2021-12-07,UK,other,179225.0
+2021-12-08,UK,other,122425.0
+2021-12-09,UK,other,270120.0
+2021-12-10,UK,other,213509.0
+2021-12-11,UK,other,308710.0
+2021-12-12,UK,other,418388.0

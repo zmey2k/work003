@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,WW,Chartboost,5498225.0
 2021-04-27,WW,Chartboost,5255701.0
 2021-04-28,WW,Chartboost,7080149.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,WW,Chartboost,3299957.0
 2021-11-27,WW,Chartboost,3942752.0
 2021-11-28,WW,Chartboost,4317317.0
+2021-11-29,WW,Chartboost,4000050.0
+2021-11-30,WW,Chartboost,3340709.0
+2021-12-01,WW,Chartboost,3356407.0
+2021-12-02,WW,Chartboost,3670704.0
+2021-12-03,WW,Chartboost,3416001.0
+2021-12-04,WW,Chartboost,4658456.0
+2021-12-05,WW,Chartboost,4008034.0
+2021-12-06,WW,Chartboost,1128960.0
+2021-12-07,WW,Chartboost,3086494.0
+2021-12-08,WW,Chartboost,3206727.0
+2021-12-09,WW,Chartboost,1186244.0
+2021-12-10,WW,Chartboost,3590629.0
+2021-12-11,WW,Chartboost,1475036.0
+2021-12-12,WW,Chartboost,1504831.0

@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,UK,Facebook,635854.0
 2021-04-27,UK,Facebook,632875.0
 2021-04-28,UK,Facebook,638944.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,UK,Facebook,851328.0
 2021-11-27,UK,Facebook,675926.0
 2021-11-28,UK,Facebook,1192142.0
+2021-11-29,UK,Facebook,1118008.0
+2021-11-30,UK,Facebook,273736.0
+2021-12-01,UK,Facebook,528962.0
+2021-12-02,UK,Facebook,404969.0
+2021-12-03,UK,Facebook,298613.0
+2021-12-04,UK,Facebook,394809.0
+2021-12-05,UK,Facebook,768277.0
+2021-12-06,UK,Facebook,360050.0
+2021-12-07,UK,Facebook,405616.0
+2021-12-08,UK,Facebook,698298.0
+2021-12-09,UK,Facebook,958073.0
+2021-12-10,UK,Facebook,1121842.0
+2021-12-11,UK,Facebook,795927.0
+2021-12-12,UK,Facebook,608692.0

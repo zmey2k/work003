@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,AR,Amazon,1111.0
 2021-04-28,AR,Amazon,3198.0
 2021-04-29,AR,Amazon,967.0

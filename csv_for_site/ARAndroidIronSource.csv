@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,AR,IronSource,27488.0
 2021-04-27,AR,IronSource,48850.0
 2021-04-28,AR,IronSource,41720.0
@@ -195,3 +195,17 @@ date,country,network,market_volume
 2021-11-26,AR,IronSource,46437.0
 2021-11-27,AR,IronSource,41260.0
 2021-11-28,AR,IronSource,57204.0
+2021-11-29,AR,IronSource,478528.0
+2021-11-30,AR,IronSource,406461.0
+2021-12-01,AR,IronSource,283760.0
+2021-12-02,AR,IronSource,344763.0
+2021-12-03,AR,IronSource,408157.0
+2021-12-04,AR,IronSource,437712.0
+2021-12-05,AR,IronSource,631782.0
+2021-12-06,AR,IronSource,401205.0
+2021-12-07,AR,IronSource,371193.0
+2021-12-08,AR,IronSource,408808.0
+2021-12-09,AR,IronSource,539996.0
+2021-12-10,AR,IronSource,283460.0
+2021-12-11,AR,IronSource,584820.0
+2021-12-12,AR,IronSource,354239.0

@@ -1,4 +1,4 @@
-date,country,network,market_volume
+date,country,networks,market_volume
 2021-04-26,UK,Chartboost,171475.0
 2021-04-27,UK,Chartboost,130339.0
 2021-04-28,UK,Chartboost,125506.0
@@ -216,3 +216,17 @@ date,country,network,market_volume
 2021-11-26,UK,Chartboost,286675.0
 2021-11-27,UK,Chartboost,440059.0
 2021-11-28,UK,Chartboost,260967.0
+2021-11-29,UK,Chartboost,119367.0
+2021-11-30,UK,Chartboost,140998.0
+2021-12-01,UK,Chartboost,203385.0
+2021-12-02,UK,Chartboost,197080.0
+2021-12-03,UK,Chartboost,144075.0
+2021-12-04,UK,Chartboost,375631.0
+2021-12-05,UK,Chartboost,178116.0
+2021-12-06,UK,Chartboost,186908.0
+2021-12-07,UK,Chartboost,156730.0
+2021-12-08,UK,Chartboost,137008.0
+2021-12-09,UK,Chartboost,134115.0
+2021-12-10,UK,Chartboost,121605.0
+2021-12-11,UK,Chartboost,178890.0
+2021-12-12,UK,Chartboost,100543.0
