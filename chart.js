@@ -29,35 +29,35 @@ function addAndroid(){
 };
 
 function addAllNetworks(){
-  params.network='Allnetworks';
+  params.networks='Allnetworks';
 };
 
 function addFacebook(){
-  params.network='Facebook';
+  params.networks='Facebook';
 };
 
 function addAdmob(){
-  params.network='AdMob';
+  params.networks='AdMob';
 };
 
 function addUnity(){
-  params.network='Unity';
+  params.networks='Unity';
 };
 
 function addIronSource(){
-  params.network='IronSource';
+  params.networks='IronSource';
 };
 
 function addChartboost(){
-  params.network='Chartboost';
+  params.networks='Chartboost';
 };
 
 function addAppLovin(){
-  params.network='AppLovin';
+  params.networks='AppLovin';
 };
 
 function addother(){
-  params.network='other';
+  params.networks='other';
 };
 
 
@@ -86,7 +86,7 @@ function addother(){
 //     //-----------------------------DATA-----------------------------//
 //     const timeConv = d3.timeParse("%Y-%m-%d");
 
-//     let dataset = d3.csv("./csv_for_site/"+params.country+params.platform+params.network+".csv");
+//     let dataset = d3.csv("./csv_for_site/"+params.country+params.platform+params.networks+".csv");
 //     dataset.then(function(data) {
 //         var slices = data.columns.slice(1).map(function(id) {
 //             return {
@@ -186,7 +186,7 @@ function myFunction() {
     let ed=document.getElementById("enddate").value;
 
     const timeConv = d3.timeParse("%Y-%m-%d");
-    let dataset = d3.csv("./csv_for_site/"+params.country+params.platform+params.network+".csv");
+    let dataset = d3.csv("./csv_for_site/"+params.country+params.platform+params.networks+".csv");
     dataset
         .then(function(d){
             let data0=d.filter(function(i){
